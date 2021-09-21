@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Progressive Chess</title>
+            <link rel="stylesheet" href="styles/chessboard-1.0.0.css"/>
+            <link rel="stylesheet" href="styles/style.css"/>
+    
+            <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+            <script src="src/chess.js"></script>
+            <script src="src/chessboard-1.0.0.js"></script>
+            <script src="/socket.io/socket.io.js"></script>
+            <script src="client.js"></script>
+        </head>
+        <body>
+                <table style="width: 1050px;">
+                    <tr>
+                        <td ><div id="myBoard" style="width: 550px;"></div></td>
+                        <td style="width: 300px;">
+                            <p id="moveCounter" style="font-size:70px; text-align: center;" ></p>
+                            <p id="status"  style="font-size:40px; text-align: center;"></p>
+                        </td>
+                        <td  style="width: 200px;"><button id="newScottish">New Scottish Progressive Game</button></td>
+                    </tr>
+                </table>
+                <button id="joinWhite" style="color: white">Join White</button>
+                <button id="joinBlack" style="color: black">Join Black</button>
+                <br>
+                <p style="font-size:20px">Promote to:</p>
+                <input type="radio" id="queen" name="promotion_piece" value="q">
+                <label for="queen"><img width="60px" height="60px" src="img/chesspieces/wikipedia/wQ.png"/></label>
+                <input type="radio" id="rook" name="promotion_piece" value="r">
+                <label for="rook"><img width="60px" height="60px" src="img/chesspieces/wikipedia/wR.png"/></label>
+                <input type="radio" id="knight" name="promotion_piece" value="n">
+                <label for="knight"><img width="60px" height="60px" src="img/chesspieces/wikipedia/wN.png"/></label>
+                <input type="radio" id="bishop" name="promotion_piece" value="b">
+                <label for="bishop"><img width="60px" height="60px" src="img/chesspieces/wikipedia/wB.png"/></label>
+            </div>
+
+        </body>
+    </html>

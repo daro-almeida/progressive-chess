@@ -26,3 +26,10 @@ button:hover {
 button:active {
     transform: translateY(4px);
 }
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+  
